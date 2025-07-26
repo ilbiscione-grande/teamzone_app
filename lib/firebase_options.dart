@@ -40,49 +40,5 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCRkVbe7VJ5rpnwhgf64dacnk7L7wtSJUg',
-    appId: '1:426672758322:web:6df79fa66b2b34f79da62b',
-    messagingSenderId: '426672758322',
-    projectId: 'teamzoneapp',
-    authDomain: 'teamzoneapp.firebaseapp.com',
-    storageBucket: 'teamzoneapp.firebasestorage.app',
-    measurementId: 'G-5HFGB91QXY',
-  );
-
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDAcgDPyW5J_3Am52N9_ZEPNOaD-u_0H0c',
-    appId: '1:426672758322:android:b74c89e683cf01209da62b',
-    messagingSenderId: '426672758322',
-    projectId: 'teamzoneapp',
-    storageBucket: 'teamzoneapp.firebasestorage.app',
-  );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCwiSGJTJjdobXlaKeyTatUSbu1bxk4HOQ',
-    appId: '1:426672758322:ios:b024293211d9db599da62b',
-    messagingSenderId: '426672758322',
-    projectId: 'teamzoneapp',
-    storageBucket: 'teamzoneapp.firebasestorage.app',
-    iosBundleId: 'com.example.teamzoneApp',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCwiSGJTJjdobXlaKeyTatUSbu1bxk4HOQ',
-    appId: '1:426672758322:ios:b024293211d9db599da62b',
-    messagingSenderId: '426672758322',
-    projectId: 'teamzoneapp',
-    storageBucket: 'teamzoneapp.firebasestorage.app',
-    iosBundleId: 'com.example.teamzoneApp',
-  );
-
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyCRkVbe7VJ5rpnwhgf64dacnk7L7wtSJUg',
-    appId: '1:426672758322:web:87af63ec0e0047d29da62b',
-    messagingSenderId: '426672758322',
-    projectId: 'teamzoneapp',
-    authDomain: 'teamzoneapp.firebaseapp.com',
-    storageBucket: 'teamzoneapp.firebasestorage.app',
-    measurementId: 'G-GW8TTFYC1C',
-  );
+  
 }
