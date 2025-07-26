@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "sib-api-v3-sdk": "^8.5.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-functions": "^4.4.1"  }
+}

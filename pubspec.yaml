@@ -1,0 +1,118 @@
+name: teamzone_app
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.2.0+1
+
+environment:
+  sdk: ^3.7.2
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Core Firebase (nödvändig för alla Firebase-paket)
+  firebase_core: ^3.13.0 # Initierar Firebase :contentReference[oaicite:0]{index=0}
+
+  # Authentication – e-post-inloggning + magic links
+  firebase_auth: ^5.5.3 # Hantera inloggning, skicka sign-in-länkar :contentReference[oaicite:1]{index=1}
+
+  # Databas, lagring, funktioner
+  cloud_firestore: ^5.6.7 # Firestore-databas :contentReference[oaicite:2]{index=2}
+  firebase_storage: ^12.4.5 # Cloud Storage :contentReference[oaicite:3]{index=3}
+  cloud_functions: ^5.5.0 # Cloud Functions (t.ex. mailutskick) :contentReference[oaicite:4]{index=4}
+
+  # Push & lokala notifikationer
+  firebase_messaging: ^15.2.5 # Ta emot FCM-meddelanden :contentReference[oaicite:5]{index=5}
+  flutter_local_notifications: ^19.1.0
+  awesome_notifications:
+    ^0.10.1 # Visa lokala notifikationer
+    # Visa actionable notifications (Ja/Nej)
+
+  # Deep links (Android App Links & iOS Universal Links)
+  app_links: ^6.4.0 # Lyssna på in-app URI:er
+
+  # session management
+  shared_preferences: ^2.2.0 # Lagra data i appens loka katalog :contentReference[oaicite:6]{index=6}
+  provider: ^6.0.0
+
+  # utils
+  intl: ^0.20.2 # Internationalization support for Flutter
+  flutter_riverpod: ^2.6.1
+  fl_chart: ^1.0.0
+  flutter_pdfview: ^1.4.0+1
+  rxdart: ^0.27.0
+  file_picker: ^10.1.9
+  path_provider: ^2.0.0
+  url_launcher: ^6.3.1
+  pdfrx: ^1.1.29
+  image_picker: ^0.8.7+3
+  http: ^1.4.0
+  share_plus: ^11.0.0
+
+  # UI
+  cupertino_icons: ^1.0.2
+  flutter_speed_dial: ^7.0.0
+  fluttertoast: ^8.2.2
+  font_awesome_flutter: ^10.4.0
+  google_fonts: ^5.1.0
+  table_calendar: ^3.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/football_pitch.png
+    - assets/football_pitch_vertical.png
+    - assets/football_pitch_horizontal.png
+    - assets/football_intro_noBg.png
+
+  fonts:
+    - family: Figtree
+      fonts:
+        - asset: assets/fonts/Figtree-Regular.ttf
+        - asset: assets/fonts/Figtree-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Figtree-Black.ttf
+          weight: 900
+        - asset: assets/fonts/Figtree-Light.ttf
+          weight: 200

@@ -1,0 +1,81 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+.vscode/
+
+# Flutter / Dart
+.dart_tool/
+.packages
+.pub/
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-versions
+.buildlog/
+build/
+**/ios/Flutter/.last_build_id
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/Runner/GeneratedPluginRegistrant.*
+
+# Android
+/android/.gradle/
+/android/app/debug/
+/android/app/profile/
+/android/app/release/
+/android/local.properties
+**/android/key.properties
+
+# Xcode
+*.xcuserstate
+*.xcworkspace
+xcuserdata/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Firebase config (om du checkar in, annars ignorera)
+/android/app/google-services.json
+/ios/Runner/GoogleService-Info.plist
+
+# IntelliJ / Android Studio
+*.iml
+.idea/
+
+# macOS
+.DS_Store
+
+# Loggar och temporära filer
+*.log
+*.swp
+
+# Hemlig nyckel med lösenord, får ej checkas in
+android/key.properties
+functions/sendgrid_key.txt
